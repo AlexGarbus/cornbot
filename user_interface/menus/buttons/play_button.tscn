@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://user_interface/theme.tres" type="Theme" id=1]
+[ext_resource path="res://user_interface/menus/buttons/play_button.gd" type="Script" id=2]
+
+[node name="PlayButton" type="Button"]
+margin_right = 12.0
+margin_bottom = 20.0
+theme = ExtResource( 1 )
+text = "Play"
+script = ExtResource( 2 )
+
+[connection signal="button_up" from="." to="." method="_on_PlayButton_button_up"]
